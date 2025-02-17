@@ -57,7 +57,7 @@ export default function Footer() {
       </div>
       <div className="w-9/12 md:w-10/12 mx-auto py-10">
         <h3 className="text-2xl font-semibold text-gray-700 my-8 ">
-          We've served 35 million+ guests and we are here for you
+        We’ve helped thousands of travelers explore the world, and we’re always here for you.
         </h3>
         <div className="flex flex-wrap justify-between gap-8 py-10">
           {features.map((feature, index) => (

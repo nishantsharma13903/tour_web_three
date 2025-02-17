@@ -1,5 +1,5 @@
 import React from "react";
-import hero_vid from "../../assets/videos/homepage_hero.mp4";
+import hero_vid from "../../assets/videos/12747111_3840_2160_24fps.mp4";
 import image_1 from "../../assets/media/image_17.jpg";
 import image_2 from "../../assets/media/image_18.jpg";
 import image_3 from "../../assets/media/image_19.jpg";
@@ -21,27 +21,27 @@ export default function HomePage() {
   const features = [
     {
       icon:gif_three ,
-      title: "Only the finest",
+      title: "World-Class Adventures",
       description:
-        "At Headout, you only find the best. We do the hard work so you don't have to.",
+        "With Fly in Minute, every tour is handpicked for quality. Sit back, relax, and let us handle the details.",
     },
     {
       icon: gif_four,
-      title: "Greed is good",
+      title: "Value Meets Experience",
       description:
-        "With quality, you also get lowest prices, last-minute availability and 24x7 support.",
+        "Affordable, last-minute bookings, 24/7 support—because your dream vacation shouldn’t break the bank.",
     },
     {
       icon: gif_one,
-      title: "Experience every flavour",
+      title: "Discover Every Corner",
       description:
-        "Offbeat or mainstream, a tour or a show, a game or a museum - we have 'em all.",
+        "From hidden gems to iconic landmarks, adventure awaits for every kind of traveler. We've got it all.",
     },
     {
       icon: gif_two,
-      title: "No pain, only gain",
+      title: "Satisfaction Guaranteed",
       description:
-        "Didn't love it? We'll give you your money back. Not cocky, just confident.",
+        "Not impressed? We’ll make it right. Refunds, smiles, and peace of mind—because you're worth it.",
     },
   ];
 
