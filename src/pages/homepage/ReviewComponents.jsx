@@ -81,6 +81,8 @@ import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import review1 from "../../assets/media/review1.jpg";
+import review2 from "../../assets/media/review_4.jpg";
+import review3 from "../../assets/media/review_3.jpg";
 
 const responsive = {
     0: { items: 1 },
@@ -97,14 +99,14 @@ const reviews = [
         review: 'The Royal Palace is a feast for the eyes. It is beautiful with lots of rooms on show. The cost was very fair and we loved not having to queue to get out tickets.',
     },
     {
-        img: review1,
+        img: review2,
         name: 'Ben',
         location: 'Belgium',
         rating: 5,
         review: 'The atmosphere created with the authentic set pieces on the real film location made you believe that you really have been in Hogwarts. Headout was very helpful in helping me book despite my disability.',
     },
     {
-        img: review1,
+        img: review3,
         name: 'Sophie',
         location: 'France',
         rating: 5,
