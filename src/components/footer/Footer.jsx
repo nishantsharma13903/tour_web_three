@@ -3,28 +3,33 @@ import apple from "../../assets/media/en.png";
 import google from "../../assets/media/en-342.png";
 import english from "../../assets/media/English.png";
 
+import img1 from '../../assets/media/feature_1.png'
+import img2 from '../../assets/media/feature_2.png'
+import img3 from '../../assets/media/feature_3.png'
+import img4 from '../../assets/media/feature_4.png'
+
 export default function Footer() {
   const features = [
     {
-      icon: "🌟",
+      icon: img1,
       title: " Trusted by Travelers",
       description:
         "Rated 4.9 on TripAdvisor| 10,000+ happy adventurers sharing their stories.",
     },
     {
-      icon: "💰",
+      icon: img2,
       title: "50,000+ Journeys Completed",
       description:
         "From desert safaris to luxury cruises, weâve made dream vacations a reality.",
     },
     {
-      icon: "💖",
+      icon: img3,
       title: "Featured Worldwide",
       description:
         "Recognized by top travel blogs and media as a go-to agency for unforgettable trips.",
     },
     {
-      icon: "😎",
+      icon: img4,
       title: "24/7 Travel Support",
       description:
         "Questions? Need help? Our experts are just a call or message away, any time.",
@@ -56,8 +61,11 @@ export default function Footer() {
         </h3>
         <div className="flex flex-wrap justify-between gap-8 py-10">
           {features.map((feature, index) => (
-            <div key={index} className="w-11/12 sm:w-[250px]  ">
-              <div className="text-4xl mb-2">{feature.icon}</div>
+            <div key={index} className="w-11/12 sm:w-[250px]">
+              {/* <div className="text-4xl mb-2">{feature.icon}</div> */}
+              <div className="text-4xl mb-2">
+                <img src={feature.icon} className={`h-[50px] ${index===0 ? "w-[140px] h-[70px]" : "w-[80px]"} `} alt="Feature Icon" />
+              </div>
               <h3 className="text-lg font-semibold">{feature.title}</h3>
               <p className="text-gray-600 text-sm mt-2">
                 {feature.description}
