@@ -1,0 +1,48 @@
+/* Change navigation arrows to white */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 50%;
+  color: grey !important;
+  opacity: 0; /* Hide by default */
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none; /* Prevent interaction when hidden */
+}
+
+/* Make arrows bigger */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
+/* Change pagination dots to white */
+.swiper-pagination {
+  opacity: 0; /* Hide bullets by default */
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none; /* Prevent interaction when hidden */
+}
+
+/* Make active pagination dot more visible */
+.swiper-pagination-bullet {
+  background: white !important;
+}
+
+/* Show navigation arrows and bullets on hover */
+.swiper:hover .swiper-button-next,
+.swiper:hover .swiper-button-prev {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.swiper:hover .swiper-pagination {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Hide disabled navigation buttons */
+.swiper-button-disabled {
+  display: none !important;
+}

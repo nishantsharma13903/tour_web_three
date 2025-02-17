@@ -1,0 +1,51 @@
+/* Change navigation arrows to white */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  width: 35px !important; /* Adjust button container width */
+  height: 35px !important; /* Adjust button container height */
+  border-radius: 50%;
+  color: grey !important;
+  opacity: 0; /* Hide buttons by default */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show navigation buttons on hover */
+.your-carousel-container:hover .swiper-button-next,
+.your-carousel-container:hover .swiper-button-prev {
+  opacity: 1 !important;
+}
+
+/* Change arrow size */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px !important; /* Make the arrow bigger */
+  font-weight: bold;
+}
+
+/* Change pagination dots to white */
+.swiper-pagination-bullet {
+  background: white !important;
+}
+
+/* Make active pagination dot more visible */
+.swiper-pagination-bullet-active {
+  background: white !important;
+  opacity: 1;
+}
+
+/* Image hover effect */
+.swiper-slide img {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Apply a zoom effect on hover */
+.swiper-slide:hover img {
+  /* transform: scale(1.1); */
+  filter: brightness(90%);
+}
+
+.swiper-button-disabled {
+  display: none !important; /* Hide the disabled navigation button */
+  pointer-events: none; /* Prevent interaction */
+}
