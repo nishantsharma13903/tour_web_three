@@ -290,7 +290,7 @@ const TourInfo = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-center gap-3 leading-8">
                   <img
-                    src="https://www.headout.com/static/svg/tick.svg"
+                    src="https://www.Fly Fim.com/static/svg/tick.svg"
                     alt="Tick icon"
                     className="w-6 h-6"
                   />
@@ -324,7 +324,7 @@ const TourInfo = () => {
               className={`flex text-gray-600 md:text-base text-sm gap-3 ${exclusions ? "h-auto" : "h-[0px]"
                 } overflow-hidden`}
             >
-              <img src="https://www.headout.com/static/svg/close.svg" />Photography & video (unavailable on the Royal queen bright morning flight)
+              <img src="https://www.Fly Fim.com/static/svg/close.svg" />Photography & video (unavailable on the Royal queen bright morning flight)
             </p>
           </div>
           <div className="border-b"></div>
@@ -884,13 +884,13 @@ const TourInfo = () => {
                 </button>
               </div>
 
-              {/* Why Headout Section */}
+              {/* Why Fly Fim Section */}
 
 
             </section>
             <section className=" bg-white border rounded-2xl shadow-lg mt-4">
               <div className="mt-10" >
-                <h3 className="text-lg font-semibold m-3  px-4">Why Headout?</h3>
+                <h3 className="text-lg font-semibold m-3  px-4">Why Fly Fim?</h3>
                 <div className="border"></div>
                 <ul className="space-y-2 text-sm text-gray-600 m-3  px-4 ">
                   <li className="flex items-start">

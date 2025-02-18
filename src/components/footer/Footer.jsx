@@ -42,7 +42,7 @@ export default function Footer() {
           <div className="flex flex-col justify-center md:w-1/2 w-full md:px-6 px-0">
             <h2 className="text-2xl font-semibold">World at your tap.</h2>
             <p className="text-base text-gray-700 mt-2">
-              Get the Headout app to get tickets on your phone and access
+              Get the Fly Fim app to get tickets on your phone and access
               app-only deals. Talk about win-win.
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function Footer() {
               <li>🤙 Help center</li>
               <li>🗨️ Chat with us</li>
               <li>📞 Call +13478970100</li>
-              <li>📧 support@headout.com</li>
+              <li>📧 support@Fly Fim.com</li>
             </ul>
           </div>
 
@@ -101,9 +101,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Headout */}
+          {/* Fly Fim */}
           <div>
-            <h3 className="text-lg font-semibold">Headout</h3>
+            <h3 className="text-lg font-semibold">Fly Fim</h3>
             <ul className="mt-4 space-y-2">
               <li>Our story</li>
               <li>Careers</li>

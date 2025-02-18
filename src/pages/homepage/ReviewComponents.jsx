@@ -22,7 +22,7 @@
 //         name: 'Ben',
 //         location: 'Belgium',
 //         rating: 5,
-//         review: 'The atmosphere created with the authentic set pieces on the real film location made you believe that you really have been in Hogwarts. Headout was very helpful in helping me book despite my disability.',
+//         review: 'The atmosphere created with the authentic set pieces on the real film location made you believe that you really have been in Hogwarts. Fly Fim was very helpful in helping me book despite my disability.',
 //     },
 //     {
 //         img: review1,
@@ -103,7 +103,7 @@ const reviews = [
         name: 'Ben',
         location: 'Belgium',
         rating: 5,
-        review: 'The atmosphere created with the authentic set pieces on the real film location made you believe that you really have been in Hogwarts. Headout was very helpful in helping me book despite my disability.',
+        review: 'The atmosphere created with the authentic set pieces on the real film location made you believe that you really have been in Hogwarts. Fly Fim was very helpful in helping me book despite my disability.',
     },
     {
         img: review3,
