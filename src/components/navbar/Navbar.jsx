@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../../assets/media/logo.png"
 import { useLocation } from "react-router-dom";
+import { CiCircleQuestion } from "react-icons/ci";
 
 export const Navbar = () => {
 
@@ -52,28 +53,15 @@ export const Navbar = () => {
 
         {/* Actions */}
         <div className={`flex items-center space-x-4 ${bgWhite ? "text-gray-600" : "text-white"} text-sm`}>
-          <div className="hidden sm:flex items-center space-x-1">
+          <div className="flex items-center space-x-1 md:text-sm text-xs mr-3">
             <span>English / INR</span>
             <span>|</span>
             <span className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 mr-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 4.354a4 4 0 100 15.292m0-15.292v15.292"
-                />
-              </svg>
-              Help
+            <CiCircleQuestion />
+              <span className="ml-1">Help</span>
             </span>
           </div>
-          <button className="bg-white text-gray-800 px-4 py-1 rounded-lg border border-gray-300 hover:shadow md:text-base text-sm">
+          <button className="bg-white text-gray-800 px-4 py-1 rounded-lg border border-gray-300 hover:shadow md:text-xs text-xs hidden md:block">
             Sign in
           </button>
         </div>

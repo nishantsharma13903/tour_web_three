@@ -12,6 +12,8 @@ import ClientsR2LCarousel from "./ClientsR2LCarousel";
 import SwiperSliderThree from "../../components/swiper/SwiperSliderThree";
 import SwiperSliderTwo from "../../components/swiper/SwiperSliderTwo";
 
+import '../../styles/scrollbar.css'
+
 import gif_one from '../../assets/gif/gif_one.gif'
 import gif_two from '../../assets/gif/gif_two.gif'
 import gif_three from '../../assets/gif/gif_three.gif'
@@ -21,24 +23,28 @@ export default function HomePage() {
   const features = [
     {
       icon:gif_three ,
+      color: "#3ed5ff",
       title: "World-Class Adventures",
       description:
         "With Fly in Minute, every tour is handpicked for quality. Sit back, relax, and let us handle the details.",
     },
     {
       icon: gif_four,
+      color: "#74ed7c",
       title: "Value Meets Experience",
       description:
         "Affordable, last-minute bookings, 24/7 support—because your dream vacation shouldn’t break the bank.",
     },
     {
       icon: gif_one,
+      color: "#fa7570",
       title: "Discover Every Corner",
       description:
         "From hidden gems to iconic landmarks, adventure awaits for every kind of traveler. We've got it all.",
     },
     {
       icon: gif_two,
+      color: "#f7e1a0",
       title: "Satisfaction Guaranteed",
       description:
         "Not impressed? We’ll make it right. Refunds, smiles, and peace of mind—because you're worth it.",
@@ -72,13 +78,13 @@ export default function HomePage() {
               <i className="fa fa-search"></i>
             </button>
           </div> */}
-          <div className="flex-grow max-w-md hidden sm:flex mt-4">
+          <div className="flex-grow max-w-md flex mt-4">
             <input
               type="text"
               placeholder="Search for experiences and cities"
-              className="w-full px-4 py-2  rounded-l-lg focus:outline-none focus:ring focus:border-blue-400 placeholder:text-sm"
+              className="w-full px-4 py-1 rounded-l-lg focus:outline-none focus:ring focus:border-blue-400 placeholder:text-sm"
             />
-            <button className="px-4 py-2 bg-white text-gray-600  rounded-r-lg">
+            <button className="px-4 py-1 bg-white text-gray-600 rounded-r-lg">
               <i className="fa fa-search"></i>
             </button>
           </div>
@@ -87,9 +93,11 @@ export default function HomePage() {
 
       <div className="w-11/12 md:w-9/12 mx-auto py-10">
         {/* Features Section */}
-        <div className="flex flex-wrap justify-center gap-6 py-10">
+        <div className="flex md:justify-center justify-start md:gap-6 gap-10 py-10 scrollbar-hidden overflow-x-auto">
           {features.map((feature, index) => (
-            <div key={index} className="w-11/12 sm:w-[240px] text-start">
+            <div key={index} className="min-w-[240px] text-start relative">
+              {/* Gradient Background */}
+              <div className={`absolute top-6 left-10 w-20 h-16 bg-[${feature.color}] rounded-full blur-xl opacity-50`}></div>
               {/* <div className="text-4xl mb-2">{feature.icon}</div> */}
               <div className="text-4xl mb-2">
                 <img src={feature.icon} className="h-[50px] w-[50px]" alt="Feature Icon" />
