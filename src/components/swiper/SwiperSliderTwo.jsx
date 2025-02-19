@@ -15,19 +15,7 @@ import hero_img_4 from "../../assets/media/cruises_img_4.jpg";
 import hero_img_5 from "../../assets/media/cruises_img_5.jpg";
 import TourCardOne from "../cards/TourCardOne";
 
-const SwiperSliderTwo = ({ heading, images = [] }) => {
-  const defaultImages = [
-    hero_img_1,
-    hero_img_2,
-    hero_img_3,
-    hero_img_4,
-    hero_img_5,
-    hero_img_3,
-    hero_img_4,
-    hero_img_2,
-    hero_img_3,
-    hero_img_4,
-  ];
+const SwiperSliderTwo = ({ heading, data=[] }) => {
 
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -41,6 +29,8 @@ const SwiperSliderTwo = ({ heading, images = [] }) => {
       swiperInstance.navigation.update();
     }
   }, [swiperInstance]);
+
+  console.log("Data", data);
 
   return (
     <div className="carousel-container">
@@ -74,9 +64,9 @@ const SwiperSliderTwo = ({ heading, images = [] }) => {
         onSwiper={setSwiperInstance} // Store Swiper instance
         modules={[Navigation, Pagination]}
       >
-        {(images.length ? images : defaultImages).map((src, index) => (
+        {data && data.places.map((innerData, index) => (
           <SwiperSlide key={index}>
-            <TourCardOne />
+            <TourCardOne data={innerData} />
           </SwiperSlide>
         ))}
       </Swiper>

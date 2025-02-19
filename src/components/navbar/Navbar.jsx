@@ -16,7 +16,7 @@ export const Navbar = () => {
     }
 
     const handleScroll = () => {
-      if (window.scrollY > 580) {
+      if (window.scrollY > 550) {
         setBgWhite(true);
       } else {
         setBgWhite(false);

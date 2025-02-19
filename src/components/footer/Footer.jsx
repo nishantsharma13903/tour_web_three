@@ -8,11 +8,18 @@ import img2 from "../../assets/media/feature_2.png";
 import img3 from "../../assets/media/feature_3.png";
 import img4 from "../../assets/media/feature_4.png";
 
-import { FaTicketAlt, FaBus, FaShip, FaUtensils, FaConciergeBell } from "react-icons/fa";
+import {
+  FaTicketAlt,
+  FaBus,
+  FaShip,
+  FaUtensils,
+  FaConciergeBell,
+} from "react-icons/fa";
 import { MdTour } from "react-icons/md";
 
-
 import { MdDirectionsBike } from "react-icons/md";
+import BrowseByThemes from "./BrowseByThemes";
+import HolidayBooking from "./HolidayBooking";
 
 export default function Footer() {
   const features = [
@@ -41,37 +48,38 @@ export default function Footer() {
         "Questions? Need help? Our experts are just a call or message away, any time.",
     },
   ];
+
   return (
     <div>
-      <section className="my-10 w-9/12 md:w-10/12 mx-auto py-10">
+      {/* <section className="my-10 w-9/12 md:w-10/12 mx-auto py-10">
         <h2 className="text-2xl font-semibold">Browse by themes</h2>
-        <div className="flex flex-wrap gap-10 mt-10">
+        <div className="flex flex-wrap gap-10 mt-10 border-b-2 pb-2">
           {[
-  {
-    name: "Tickets",
-    icon: <FaTicketAlt />,
-  },
-  {
-    name: "Tours",
-    icon: <MdTour />,
-  },
-  {
-    name: "Transportation",
-    icon: <FaBus />,
-  },
-  {
-    name: "Travel Services",
-    icon: <FaConciergeBell />,
-  },
-  {
-    name: "Cruises",
-    icon: <FaShip />,
-  },
-  {
-    name: "Food and Drink",
-    icon: <FaUtensils />,
-  },
-].map((theme, index) => (
+            {
+              name: "Tickets",
+              icon: <FaTicketAlt />,
+            },
+            {
+              name: "Tours",
+              icon: <MdTour />,
+            },
+            {
+              name: "Transportation",
+              icon: <FaBus />,
+            },
+            {
+              name: "Travel Services",
+              icon: <FaConciergeBell />,
+            },
+            {
+              name: "Cruises",
+              icon: <FaShip />,
+            },
+            {
+              name: "Food and Drink",
+              icon: <FaUtensils />,
+            },
+          ].map((theme, index) => (
             <button
               key={index}
               className="text-sm text-gray-600 flex gap-2 items-center"
@@ -81,7 +89,6 @@ export default function Footer() {
             </button>
           ))}
         </div>
-        <hr />
         <div className="flex flex-wrap gap-10 mt-6">
           {[
             "Hot Air Balloon Rides",
@@ -100,8 +107,9 @@ export default function Footer() {
             </button>
           ))}
         </div>
-      </section>
-      <div className="flex justify-center w-9/12 md:w-10/12 mx-auto py-10 ">
+      </section> */}
+      <BrowseByThemes />
+      {/* <div className="flex justify-center w-9/12 md:w-10/12 mx-auto py-10 ">
         <section className="my-8 rounded-lg p-6 flex md:flex-row flex-col-reverse gap-10 justify-between w-11/12 bg-purple-50">
           <div className="flex flex-col justify-center md:w-1/2 w-full md:px-6 px-0">
             <h2 className="text-2xl font-semibold">World at your tap.</h2>
@@ -118,7 +126,11 @@ export default function Footer() {
             />
           </div>
         </section>
-      </div>
+      </div> */}
+
+      {/* <HolidayBooking /> */}
+
+
       <div className="w-11/12 md:w-10/12 mx-auto py-10">
         <h3 className="text-2xl font-semibold text-gray-700 my-8 ">
           We’ve helped thousands of travelers explore the world, and we’re

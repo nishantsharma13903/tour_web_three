@@ -44,7 +44,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import '../../styles/sliderTwo.css';
+import "../../styles/sliderTwo.css";
 
 import hero_img_1 from "../../assets/media/cruises_img_1.jpg";
 import hero_img_2 from "../../assets/media/cruises_img_2.jpg";
@@ -59,10 +59,12 @@ const shuffleArray = (array) => {
     .map(({ item }) => item); // Extract shuffled items
 };
 
-const SwiperSliderOne = ({
-  images = [hero_img_1, hero_img_2, hero_img_3, hero_img_4, hero_img_5],
-}) => {
-  const randomizedImages = shuffleArray(images); // Shuffle images before rendering
+const SwiperSliderOne = ({ images }) => {
+  // const randomizedImages = shuffleArray(images); // Shuffle images before rendering
+
+  // console.log("Data Images", randomizedImages);
+
+  console.log("Random Images", images)
 
   return (
     <Swiper
@@ -74,9 +76,13 @@ const SwiperSliderOne = ({
       pagination={{ clickable: true }}
       className="w-full h-48 your-carousel-container"
     >
-      {randomizedImages.map((src, index) => (
+      {images.map((src, index) => (
         <SwiperSlide key={index}>
-          <img src={src} alt={`Slide ${index + 1}`} className="w-full h-auto rounded-lg" />
+          <img
+            src={src}
+            alt={`Slide ${index + 1}`}
+            className="w-full h-auto rounded-lg"
+          />
         </SwiperSlide>
       ))}
     </Swiper>
