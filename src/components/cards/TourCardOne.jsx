@@ -4,6 +4,8 @@ import SwiperSlider from "../swiper/SwiperSliderOne";
 
 const TourCardOne = ({data}) => {
 
+  console.log(data)
+
   return (
     <div className="max-w-xs rounded-lg overflow-hidden relative hover:-top-1 transition-all my-3 duration-[2800ms]">
       {/* Image Section */}
@@ -12,7 +14,7 @@ const TourCardOne = ({data}) => {
           src={props.image} // Replace with your actual image URL
           alt="Cappadocia ATV Tour"
           className="w-full h-48 object-cover rounded-t-lg"
-        /> */}<SwiperSlider images={data.images} />
+        /> */}<SwiperSlider images={data?.images || []} />
         <span className="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-md shadow-md z-10">
           Free cancellation
         </span>
