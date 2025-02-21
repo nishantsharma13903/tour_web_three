@@ -290,7 +290,7 @@ const TourInfo = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-center gap-3 leading-8">
                   <img
-                    src="https://www.Fly Fim.com/static/svg/tick.svg"
+                    src="https://www.headout.com/static/svg/tick.svg"
                     alt="Tick icon"
                     className="w-6 h-6"
                   />
@@ -324,7 +324,7 @@ const TourInfo = () => {
               className={`flex text-gray-600 md:text-base text-sm gap-3 ${exclusions ? "h-auto" : "h-[0px]"
                 } overflow-hidden`}
             >
-              <img src="https://www.Fly Fim.com/static/svg/close.svg" />Photography & video (unavailable on the Royal queen bright morning flight)
+              <img src="https://www.headout.com/static/svg/close.svg" />Photography & video (unavailable on the Royal queen bright morning flight)
             </p>
           </div>
           <div className="border-b"></div>
